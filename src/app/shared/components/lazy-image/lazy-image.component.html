@@ -14,7 +14,7 @@
 
 
     <img *ngIf="showLoader"
-    src="assets/loader.svg"
+   [src]="showLoader? 'assets/loader.svg' : './loader.svg'"
     height="35"
     width="35"
     class="mt-3" />
